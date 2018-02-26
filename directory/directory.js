@@ -483,6 +483,18 @@ directory.addAsset('anclax.com', {
   type: 'iou',
 });
 
+directory.addAnchor({
+  domain: 'frasindo.com',
+  website: 'https://frasindo.com/',
+  logo: 'fransindo.com',
+  color: '#be3785',
+  displayName: 'Frasindo',
+});
+directory.addAsset('frasindo.com', {
+  code: 'FRAS',
+  issuer: 'GC75WHUIMU7LV6WURMCA5GGF2S5FWFOK7K5VLR2WGRKWKZQAJQEBM53M',
+});
+
 // Pairs involving "fiat" assets
 // "Fiat" asset should be counterSelling
 directory.addPair({
@@ -702,6 +714,10 @@ directory.addPair({
 directory.addPair({
   baseBuying: ['XLQ', 'liquido.i-server.org'],
   counterSelling: ['XLM', 'native'],
+});
+directory.addPair({
+  baseBuying: ['XLM', 'native'],
+  counterSelling: ['FRAS', 'frasindo.com'],
 });
 
 directory.addDestination('GCEGERI7COJYNNID6CYSKS5DPPLGCCLPTOSCDD2LG5SJIVWM5ISUPERI', {
